@@ -1,0 +1,19 @@
+[project]
+name = "strawberry-shooter"
+version = "1.1.0"
+description = "A pygame arcade shooter: fire strawberries at falling birthday cakes, chain combos, grab power-ups and beat the boss."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Nasir Khan" }]
+requires-python = ">=3.9"
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
